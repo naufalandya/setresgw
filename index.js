@@ -25,7 +25,7 @@ formData.append("pdf", fs.createReadStream("./pdfs/ChatGPT (1).pdf"));
 formData.append("pdf", fs.createReadStream("./pdfs/Model Prisma Enum Finansial (1).pdf"));
 
 axios
-  .post("http://localhost:3000/api/v1/milestone/pltu-jawa-7", formData, {
+  .post("http://103.196.155.16/api/v1/milestone/pltu-jawa-7", formData, {
     headers: formData.getHeaders(),
   })
   .then((response) => {
